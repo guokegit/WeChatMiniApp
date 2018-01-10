@@ -1,0 +1,15 @@
+<!--logs.wxml-->
+<view class="container">
+  <view class='flexRowAround' style='margin-bottom:100rpx;padding:30rpx;box-sizing:border-box'>
+      <input type='text' bindblur='getContent' style='border:1rpx solid #dddddd'></input>
+      <button size='mini' type='primary' style='margin:0rpx' bindtap='searchFood' loading='{{isLoading}}'>搜索</button>
+  </view> 
+    <view wx:for="{{foods}}" wx:for-item="food" wx:key="{{food.id}}"  bindtap='foodDetail' data-food="{{food}}" class='list-item' >
+        <image src='{{food.pic}}' style='width:200rpx;height:200rpx'></image>
+        <view class='flexColumAround' style='height:200rpx;margin-left:30rpx'>
+          <text>{{food.name}}</text>
+          <text style='font-size:30rpx;color:#aaaaaa'>{{food.peoplenum}}</text>
+          <text style='font-size:30rpx;color:#aaaaaa'>{{'准备:'+food.preparetime+' | 烹饪:'+food.cookingtime}}</text>
+        </view>
+    </view>
+</view>

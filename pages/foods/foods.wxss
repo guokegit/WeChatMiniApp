@@ -1,0 +1,27 @@
+
+.flexColumAround {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  box-sizing: border-box;
+}
+.flexColumBetween {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  /* box-sizing: border-box; */
+}
+.list-item{
+  width: 100%; 
+  display:flex;
+  flex-direction:row;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom:1rpx solid #aaaaaa;
+  padding:30rpx;
+  box-sizing:border-box;
+}

@@ -1,0 +1,43 @@
+.text {
+    font-size: 28rpx;
+    color: #333;
+}
+.des{
+    font-size:24rpx;
+    color:#666;
+}
+.main{
+    font-size:30rpx;
+    color:#000;
+    font-weight: bold; 
+}
+
+.iconText {
+    height: 120rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    box-sizing: border-box;
+    /* margin-top: 30rpx; */
+}
+
+.rowModule {
+    height: 140rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.module {
+    width: 49.84%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+}

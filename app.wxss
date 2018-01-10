@@ -1,0 +1,57 @@
+/**app.wxss**/
+
+.container {
+    background-color: #f0f2f8;
+    box-sizing: border-box; 
+}
+
+.flexRowStart {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+     box-sizing: border-box; 
+}
+
+.flexRowBetween {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.flexRowAround {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.flexColumAround {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+
+.flexColumBetween {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.list-item {
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 1rpx solid #aaa;
+    padding: 30rpx;
+    box-sizing: border-box;
+}

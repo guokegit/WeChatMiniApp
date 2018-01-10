@@ -1,0 +1,26 @@
+<view class='container'>
+    <!--scroll-view必须给高度(竖向)  -->
+    <scroll-view scroll-y scroll-into-view="{{bottomView}}" style="height:1085rpx">
+        <view wx:for="{{messageArr}}" wx:for-item="message" wx:key="{{message.id}}">
+            <!--机器人  -->
+            <view id='{{message.id}}' wx:if='{{message.name=="robot"}}' class='.flexRowStart' style='width:100%;padding-top:40rpx;padding-right:120rpx'>
+                <view style='padding:20rpx'>
+                    <image src='../../imgs/robot.jpg' style='width:80rpx;height:80rpx;border-radius:50rpx;'></image>
+                </view>
+                <text style='background-color:#fff;line-height:50rpx;border-radius:10rpx;box-shadow:10rpx 10rpx 10rpx #666;padding:20rpx;font-size:34rpx'>{{message.said}}</text>
+            </view>
+            <!--我  -->
+            <view id='{{message.id}}' wx:if='{{message.name=="me"}}'  style='width:100%;padding-left:120rpx;padding-top:40rpx;display:flex;flex-direction: row;justify-content: flex-end;align-items: center;box-sizing: border-box;'>
+                <text style='background-color:#10b5f6;color:#fff;line-height:50rpx;border-radius:10rpx;box-shadow:10rpx 10rpx 10rpx #666;padding:20rpx;font-size:34rpx'>{{message.said}}</text>            
+                <view style='padding:20rpx'>
+                    <image src='{{userIcon}}' style='width:80rpx;height:80rpx;border-radius:50rpx;'></image>
+                </view>
+            </view>
+        </view>
+        <view  style='height:40rpx'></view>        
+    </scroll-view>
+    <view class='flexRowAround' style='height:100rpx;'>
+        <input value='{{placehoder}}' bindinput='bindinput' style='border:0rpx;border-radius:10rpx;width:70%;height:70rpx;background-color:#ffffff'></input>
+        <button size='mini' type='primary' bindtap='send' style='margin:0rpx;background-color:#10b5f6'>发送</button>
+    </view>
+</view>

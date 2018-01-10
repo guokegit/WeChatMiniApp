@@ -1,0 +1,3 @@
+<import src="../../plugins/wxParse/wxParse.wxml"/>
+<!-- 这里 data 中 article 为 bindName -->
+<template is="wxParse" data="{{wxParseData:article.nodes}}"/>

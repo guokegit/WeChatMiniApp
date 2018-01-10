@@ -1,0 +1,12 @@
+<view class="container">
+    <view wx:for="{{newsArr}}" wx:for-item="news" wx:key="{{news.uniquekey}}" bindtap='newsDetail' data-news="{{news}}" class='list-item'>
+        <view style='width:250rpx;height:200rpx;box-sizing: border-box;'>
+            <image src='{{news.thumbnail_pic_s}}' mode="scaleToFill" style='width:250rpx;height:200rpx;'></image>
+        </view>
+        <view class='flexColumAround' style='height:200rpx;margin-left:30rpx'>
+            <text style='width:100%;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;'>{{news.title}}</text>
+            <text style='font-size:30rpx;color:#aaaaaa'>{{news.date}}</text>
+            <text style='font-size:30rpx;color:#aaaaaa'>{{news.author_name}}</text>
+        </view>
+    </view>
+</view>

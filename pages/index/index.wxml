@@ -1,0 +1,95 @@
+<view class="container">
+    <swiper style='width:100%;height:340rpx' indicator-dots indicator-color='#fff' indicator-active-color='#00ff00' autoplay interval="{{2000}}" duration="{{500}}" circular vertical="{{false}}">
+        <swiper-item wx:for="{{imgArr}}" wx:key="{{index}}">
+            <image src='{{item}}' style='width:100%;height:340rpx'></image>
+        </swiper-item>
+    </swiper>
+    <view style='height:20rpx'></view>
+    <view style='padding:20rpx;background-color:#fff;'>
+        <view class='flexRowAround'>
+            <view class='iconText' bindtap=''>
+                <icon type='search' size='30' color='rgb(0,255,255)' />
+                <text class='text'>查快递</text>
+            </view>
+            <view class='iconText' bindtap=''>
+                <icon type='waiting' size='30' color='orange' />
+                <text class='text'>实时公交</text>
+            </view>
+            <view class='iconText' bindtap=''>
+                <icon type='warn' size='30' />
+                <text class='text'>交话费</text>
+            </view>
+            <view class='iconText' bindtap=''>
+                <icon type='info' size='30' />
+                <text class='text'>在线看病</text>
+            </view>
+        </view>
+
+        <view class='flexRowAround' style='margin-top:20rpx'>
+            <view class='iconText' bindtap=''>
+                <icon type='waiting' size='30'  />
+                <text class='text'>同城租</text>
+            </view>
+            <view class='iconText' bindtap=''>
+                <icon type='search' size='30' />
+                <text class='text'>同城美食</text>
+            </view>
+            <view class='iconText' bindtap=''>
+                <icon type='success' size='30' />
+                <text class='text'>同城游</text>
+            </view>
+            <view class='iconText' bindtap=''>
+                <icon type='success_no_circle' size='30' color='red' />
+                <text class='text'>同城相亲</text>
+            </view>
+        </view>
+    </view>
+    <view style='height:20rpx'></view>
+    <view class='flexRowStart' style='background-color:#fff;height:80rpx'>
+        <view style='padding-left:30rpx;padding-right:30rpx'><text style='color:#10b5f6;font-weight:bold'>同城资讯</text></view>
+        <swiper style='width:70%;height:60rpx;' autoplay interval="{{2000}}" duration="{{500}}" circular vertical>
+            <swiper-item wx:for="{{messageArr}}" wx:key="{{index}}" class="flexRowStart">
+                <text class='text'>{{'·'+item}}</text>
+            </swiper-item>
+        </swiper>
+    </view>
+    <view style='height:20rpx'></view>
+    <view>
+        <view class='rowModule'>
+            <view class='module'>
+                <icon type='download' size='40' style='margin:30rpx' />
+                <view class='flexColumAround' style='height:90rpx'>
+                    <text class='main'>同城送</text>
+                    <text class="des">同城取送,替你跑腿</text>
+                </view>
+            </view>
+            <view class='module'>
+                <icon type='info' size='40' style='margin:30rpx' color='orange' />
+                <view class='flexColumAround' style='height:90rpx'>
+                    <text class='main'>看广告</text>
+                    <text class="des">看广告,也给钱</text>
+                </view>
+            </view>
+        </view>
+        <view style='height:0.1rpx'></view>
+        <view class='rowModule'>
+            <view class='module'>
+                <icon type='warn' size='40' style='margin:30rpx' color='blue'/>
+                <view class='flexColumAround' style='height:90rpx'>
+                    <text class='main'>共享车位</text>
+                    <text class="des">车位空闲,共享赚钱</text>
+                </view>
+            </view>
+            <view class='module'>
+                <icon type='success' size='40' style='margin:30rpx' color='rgb(0,255,255)'/>
+                <view class='flexColumAround' style='height:90rpx'>
+                    <text class='main'>家政看护</text>
+                    <text class="des">帮老人看病排队取药</text>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view style='height:20rpx'></view>
+    
+    
+</view>

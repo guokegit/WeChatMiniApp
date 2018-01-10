@@ -1,0 +1,12 @@
+<view class='flexcolumnStart' >
+    <text>{{food.name}}</text>  
+    <text style='font-size:30rpx;color:#aaaaaa'>{{food.peoplenum}}</text>  
+    <text style='font-size:30rpx;color:#aaaaaa'>{{'准备:'+food.preparetime}}</text> 
+    <text style='font-size:30rpx;color:#aaaaaa'>{{'烹饪:'+food.cookingtime}}</text>  
+    <text style='font-size:30rpx;color:#aaaaaa'>{{food.tag}}</text> 
+    
+   <image style='width:100%' src='{{food.pic}}'/> 
+   <text style='font-size:30rpx;color:#aaaaaa'>{{food.content}}</text> 
+   <text style='font-size:30rpx;color:#aaaaaa' wx:for='{{food.material}}' wx:for-item='material' wx:key="{{index}}">{{index+1+'.'+material.mname+':['+material.amount+']'+(material.type==="0"?'(辅料)':'(主料)')}}</text> 
+   <text style='font-size:30rpx;color:#aaaaaa' wx:for='{{food.process}}' wx:for-item='process' wx:key="{{index}}">{{index+1+'.'+process.pcontent}}</text>   
+</view>

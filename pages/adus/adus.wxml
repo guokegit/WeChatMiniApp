@@ -1,0 +1,19 @@
+<view class='container'>
+    <view class='flexRowBetween' style='margin-bottom:100rpx;padding:30rpx;box-sizing:border-box'>
+        <input type='text' bindblur='getContent' style='border:1rpx solid #dddddd'></input>
+        <button size='mini' type='primary' style='margin:0rpx' bindtap='addFood'>添加</button>
+        <button size='mini' type='default' style='margin:0rpx' bindtap='history'>历史</button>
+    </view> 
+    <view wx:if="{{foodArr.length!=0}}" class='flexRowAround' style='margin-bottom:40rpx'>
+        <button size='mini' type='primary' style='margin:0rpx' bindtap='saveAll'>保存全部到本地</button>
+        <button size='mini' type='warn' style='margin:0rpx' bindtap='deleteAll'>清空全部</button>
+    </view>
+    <view wx:for="{{foodArr}}"  wx:for-item="foodObj"  class='flexRowBetween' style='height:100rpx;border-top:1rpx solid #dddddd;padding:30rpx;box-sizing:border-box'>
+      <text wx:if="{{!foodObj.isEdit}}">{{index+1}}.{{foodObj.food}}</text>
+      <input wx:if="{{foodObj.isEdit}}" type='text' style='border:1rpx solid #dddddd' bindblur='getFood' value='{{foodObj.food}}'></input>
+      <view>
+        <button size='mini' type='default' style='margin:0rpx;background-color:{{foodObj.isEdit?"blue":"orange"}};color:#fff' bindtap='updateFood' data-index='{{index}}'>{{foodObj.isEdit?'保存':'修改'}}</button>
+        <button size='mini' type='warn' style='margin:0rpx' bindtap='deleteFood' data-index='{{index}}'>删除</button>
+      </view>
+    </view>  
+</view>

@@ -1,0 +1,17 @@
+<view class="container">
+    <view style='background-color:#fff;padding:20rpx;margin-top:20rpx' bindtap='adus'>
+        <text>增删改存</text>
+    </view>
+    <view style='background-color:#fff;padding:20rpx;margin-top:20rpx' bindtap='robot'>
+        <text>机器人</text>
+    </view>
+    <view style='background-color:#fff;padding:20rpx;margin-top:20rpx' bindtap='blog'>
+        <text>博客</text>
+    </view>
+    <view style='background-color:#fff;padding:20rpx;margin-top:20rpx' bindtap='foods'>
+        <text>菜谱</text>
+    </view>
+    <view style='background-color:#fff;padding:20rpx;margin-top:20rpx' bindtap='news'>
+        <text>新闻</text>
+    </view>
+</view>

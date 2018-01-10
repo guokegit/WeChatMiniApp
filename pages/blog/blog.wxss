@@ -1,0 +1,17 @@
+/**index.wxss**/
+
+.blogItem{
+  width: 100%;
+  padding: 30rpx;
+  margin-top: 20rpx;
+  background-color:#ffffff;
+   /* border: #dddddd 1px solid;  */
+  /* box-shadow: #dddddd 1px 1px 1px 1px; */
+  box-sizing: border-box;
+}
+.flexJustRow{
+  display:flex;
+  flex-direction:row;
+  justify-content: space-between;
+  align-items: center;
+}

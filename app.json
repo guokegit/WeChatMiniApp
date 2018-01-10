@@ -1,0 +1,59 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/livingCircle/livingCircle",        
+        "pages/my/my",
+        "pages/test/test",        
+        "pages/robot/robot",        
+        "pages/news/news",
+        "pages/newsDetail/newsDetail",
+        "pages/foods/foods",
+        "pages/adus/adus",
+        "pages/foodDetail/foodDetail",
+        "pages/blog/blog"        
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#10b5f6",
+        "navigationBarTitleText": "同城帮live",
+        "navigationBarTextStyle": "#fff",
+        "enablePullDownRefresh": true,
+        "onReachBottomDistance": 2
+    },
+    "tabBar": {
+        "position": "bottom",
+        "selectedColor":"#10b5f6",
+        "list": [
+            {
+                "pagePath":"pages/index/index",
+                "text": "简生",
+                "iconPath":"imgs/home_uncheck@3x.png",
+                "selectedIconPath":"imgs/home_check@3x.png"
+            },
+            {
+                "pagePath": "pages/livingCircle/livingCircle",
+                "text": "生活圈",
+                "iconPath": "imgs/server_uncheck@2x.png",
+                "selectedIconPath": "imgs/server_check@2x.png"
+            },
+            {
+                "pagePath": "pages/my/my",
+                "text": "我的",
+                "iconPath": "imgs/mine_uncheck@2x.png",
+                "selectedIconPath": "imgs/mine_check@2x.png"
+            }
+            ,
+            {
+                "pagePath": "pages/test/test",
+                "text": "测试"
+            }
+        ]
+    },
+    "networkTimeout": {
+        "request": 10000,
+        "connectSocket": 30,
+        "downloadFile": 10000,
+        "uploadFile": 20000
+    },
+    "debug": true
+}
